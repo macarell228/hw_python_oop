@@ -73,7 +73,7 @@ class SportsWalking(Training):
         one_hour = 3600
         LEN_STEP = 0.65
         a = some_thing1 * self.weight + (self.get_mean_speed(LEN_STEP))
-        b = (a * km / one_hour) ** 2 / (self.height * 0.029 
+        b = (a * km / one_hour) ** 2 / (self.height * 0.029
                                         * self.weight * self.duration)
         return b
 
